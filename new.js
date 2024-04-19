@@ -1,4 +1,5 @@
 // Read the file into memory (Assuming the file input has the id 'fileInput')
+console.log("Javascript is working on github");
 let questionNumber = 0;
 let arrayOfObjects;
 
