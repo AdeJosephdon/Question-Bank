@@ -136,13 +136,13 @@ margin-top: 10px;
     width: 80%;
     margin: auto;
     height: 30vh;
+    margin-bottom: 10px;
 }
 
 #left-section {
     background-color: gray;
     padding: 10px;
     border-radius: 2%;
-    margin-bottom: 10px;
     /* position: relative; */
 }
 
