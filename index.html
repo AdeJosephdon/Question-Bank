@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Bank</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Q-Bank</h1>
+    </header>
+    <main>
+    <section>
+        <div id="left-section">
+            <div id="upload-section">
+                <h2>Upload Excel File</h2>
+                <form id="excelForm" enctype="multipart/form-data">
+                    <input type="file" id="fileInput" accept=".xlsx, .xls">
+                </form>
+            </div>
+            <div id="question">
+
+            </div>
+            <div id="displayanswers">
+                <button id="showanswers">Show Answer</button>
+            </div>
+        </div>
+
+        <div id="right-section">
+            <h2>Answer</h2>
+            <div id="answer" class="hidden">
+
+            </div>
+        </div>
+    </section>
+
+    <div id="changebutton">
+        <button id="change Previous">PREVIOUS</button>
+        <button id="change next">NEXT</button>
+    </div>
+
+    <div id="questionlist">
+        <!-- <button>1</button>
+        <button>2</button>
+        <button>3</button> -->
+    </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.0/xlsx.full.min.js"></script>
+    <script type="module" src="/new.js"></script>
+</body>
+
+</html>

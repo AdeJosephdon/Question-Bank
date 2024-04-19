@@ -1,0 +1,169 @@
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    height: 10vh;
+    /* width: 100%; */
+}
+main{
+    height: 80vh;
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    height: 80%;
+}
+#questionlist{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+#questionlist button{
+    margin: 10px;
+}
+
+#left-section,
+#right-section {
+    width: 45%;
+    /* height: 100%; */
+}
+#left-section{
+    background-color: gray;
+    padding: 10px;
+    border-radius: 2%;
+    /* position: relative; */
+}
+#changebutton {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    /* padding: 20px; */
+}
+#changebutton button{
+    margin: 20px;
+    width: 40%;
+    border-radius: 10px;
+}
+#right-section {
+    background-color: rgb(69, 209, 69);
+    padding: 10px;
+    border-radius: 2%;
+}
+
+#upload-section {
+    margin-bottom: 20px;
+}
+
+
+#interpretedResults {
+    font-size: 25px;
+}
+
+#calculatedTable {
+    display: none;
+    margin-top: 20px;
+}
+#changebutton{
+    display: flex;
+}
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#displayanswers {
+
+width: 90%;
+margin-top: 10px;
+}
+#showanswers{
+    width: 100%;
+}
+#question{
+    font-size: larger;
+}
+.hidden{
+    display: none;
+}
+.answer{
+    font-size: larger;
+}
+
+@media screen and (max-width: 1000px) {
+    section {
+        display: block;
+        /* justify-content: space-evenly; */
+        height: 80%;
+    }
+
+#questionlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    /* position: absolute;
+    bottom: 10px; */
+}
+
+#questionlist button {
+    margin: 5px;
+}
+
+#left-section,
+#right-section {
+    width: 80%;
+    margin: auto;
+    height: 30vh;
+}
+
+#left-section {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 2%;
+    margin-bottom: 10px;
+    /* position: relative; */
+}
+
+#changebutton {
+    /* display: flex; */
+    /* position: absolute; */
+    /* bottom: 10px; */
+    justify-content: space-evenly;
+    width: 100%;
+    /* padding: 20px; */
+}
+
+#changebutton button {
+    margin: 20px;
+    width: 40%;
+    border-radius: 10px;
+}
+
+#right-section {
+    background-color: rgb(69, 209, 69);
+    padding: 10px;
+    border-radius: 2%;
+}
+}
