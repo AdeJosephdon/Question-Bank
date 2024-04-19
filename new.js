@@ -1,5 +1,4 @@
 // Read the file into memory (Assuming the file input has the id 'fileInput')
-console.log("Javascript is working on github");
 let questionNumber = 0;
 let arrayOfObjects;
 
@@ -92,7 +91,7 @@ function handleFileInput(event) {
             result.classList.toggle("hidden")
         }
         // result.classList.toggle('hidden');
-        console.log(result.classList);
+        // console.log(result.classList);
   });
         const Previous = document.getElementById("Previous")
 
