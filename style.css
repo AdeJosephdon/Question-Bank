@@ -171,3 +171,11 @@ margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }
+#answer, #question {
+    width: 100%; /* Adjust width as needed */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    overflow-y: auto; /* Add scroll bar for overflow content */
+    word-wrap: break-word; /* Break long words to prevent overflow */
+    white-space: normal; /* Allow text to wrap */
+    max-height: 200px; /* Set a maximum height to prevent overflow; adjust as needed */
+}
