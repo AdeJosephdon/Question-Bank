@@ -12,9 +12,9 @@ header {
     text-align: center;
     padding: 20px;
     height: 10vh;
-    /* width: 100%; */
 }
-main{
+
+main {
     height: 80vh;
     padding: 20px;
 }
@@ -24,135 +24,34 @@ section {
     justify-content: space-evenly;
     height: 80%;
 }
-#questionlist{
+
+#questionlist {
     display: flex;
     justify-content: center;
     align-content: center;
     padding: 20px;
     flex-wrap: wrap;
 }
-#questionlist button{
+
+#questionlist button {
     margin: 10px;
 }
 
 #left-section,
 #right-section {
     width: 45%;
-    /* height: 100%; */
-}
-#left-section{
-    background-color: gray;
-    padding: 10px;
-    border-radius: 2%;
-    /* position: relative; */
-}
-#changebutton {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    /* padding: 20px; */
-}
-#changebutton button{
-    margin: 20px;
-    width: 40%;
-    border-radius: 10px;
-}
-#right-section {
-    background-color: rgb(69, 209, 69);
-    padding: 10px;
-    border-radius: 2%;
-}
-
-#upload-section {
-    margin-bottom: 20px;
-}
-
-
-#interpretedResults {
-    font-size: 25px;
-}
-
-#calculatedTable {
-    display: none;
-    margin-top: 20px;
-}
-#changebutton{
-    display: flex;
-}
-button {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-#displayanswers {
-
-width: 90%;
-margin-top: 10px;
-}
-#showanswers{
-    width: 100%;
-}
-#question{
-    font-size: larger;
-}
-.hidden{
-    display: none;
-}
-.answer{
-    font-size: larger;
-}
-
-@media screen and (max-width: 1000px) {
-    section {
-        display: block;
-        /* justify-content: space-evenly; */
-        height: 80%;
-    }
-
-#questionlist {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    padding: 20px;
-    /* position: absolute;
-    bottom: 10px; */
-}
-
-#questionlist button {
-    margin: 5px;
-}
-
-#left-section,
-#right-section {
-    width: 80%;
-    margin: auto;
-    height: 30vh;
 }
 
 #left-section {
     background-color: gray;
     padding: 10px;
     border-radius: 2%;
-    margin-bottom: 10px;
-    /* position: relative; */
 }
 
 #changebutton {
-    /* display: flex; */
-    /* position: absolute; */
-    /* bottom: 10px; */
+    display: flex;
     justify-content: space-evenly;
     width: 100%;
-    /* padding: 20px; */
 }
 
 #changebutton button {
@@ -166,16 +65,94 @@ margin-top: 10px;
     padding: 10px;
     border-radius: 2%;
 }
+
+#upload-section {
+    margin-bottom: 20px;
 }
-.inputAndSelect{
+
+#interpretedResults {
+    font-size: 25px;
+}
+
+#calculatedTable {
+    display: none;
+    margin-top: 20px;
+}
+
+#displayanswers {
+    width: 90%;
+    margin-top: 10px;
+}
+
+#showanswers {
+    width: 100%;
+}
+
+#question {
+    font-size: larger;
+}
+
+.hidden {
+    display: none;
+}
+
+.answer {
+    font-size: larger;
+}
+
+.inputAndSelect {
     display: flex;
     justify-content: space-between;
 }
+
+/* New styles for #answer and #question */
 #answer, #question {
-    width: 100%; /* Adjust width as needed */
-    box-sizing: border-box; /* Ensure padding and border are included in the width */
-    overflow-y: auto; /* Add scroll bar for overflow content */
-    word-wrap: break-word; /* Break long words to prevent overflow */
+    width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word; /* Ensure long words break to prevent overflow */
     white-space: normal; /* Allow text to wrap */
+    padding: 10px; /* Add some padding for better readability */
     max-height: 70px;
+    text-align: left; /* Align text to the left */
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 1000px) {
+    section {
+        display: block;
+        height: auto; /* Allow section height to adjust based on content */
+    }
+
+    #questionlist {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        padding: 20px;
+    }
+
+    #questionlist button {
+        margin: 5px;
+    }
+
+    #left-section,
+    #right-section {
+        width: 80%;
+        margin: auto;
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    #left-section {
+        margin-bottom: 10px;
+    }
+
+    #changebutton {
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    #changebutton button {
+        margin: 20px;
+        width: 40%;
+    }
 }
