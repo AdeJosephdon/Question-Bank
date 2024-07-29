@@ -22,7 +22,7 @@ main {
 section {
     display: flex;
     justify-content: space-evenly;
-    height: 80%;
+    height: auto; /* Allow section height to adjust based on content */
 }
 
 #questionlist {
@@ -40,6 +40,7 @@ section {
 #left-section,
 #right-section {
     width: 45%;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
 }
 
 #left-section {
@@ -109,7 +110,7 @@ section {
 #answer, #question {
     width: 100%;
     box-sizing: border-box;
-    overflow: auto; /* Scrollbars appear if needed */
+    overflow: visible; /* Ensure text is not cut off */
     word-break: break-word; /* Break long words */
     padding: 10px; /* Padding for better readability */
     height: auto; /* Expand height based on content */
