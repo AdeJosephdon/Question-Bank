@@ -109,10 +109,10 @@ section {
 #answer, #question {
     width: 100%;
     box-sizing: border-box;
-    overflow: auto; /* Ensure scrollbars appear if needed */
-    word-break: break-word; /* Break words that are too long */
+    overflow: auto; /* Scrollbars appear if needed */
+    word-break: break-word; /* Break long words */
     padding: 10px; /* Padding for better readability */
-    max-height: 70px;
+    height: auto; /* Expand height based on content */
 }
 
 /* Responsive design adjustments */
