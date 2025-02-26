@@ -18,7 +18,7 @@ function handleFileInput(event) {
             // console.log(worksheets[sheetName]);
         }
 
-        console.log(worksheets)
+        // console.log(worksheets)
 
         let worksheetsNames = [];
 
@@ -43,7 +43,7 @@ function handleFileInput(event) {
         function handleSheetChange(event) {
         const selectedSheet = event.target.value;
 
-        console.log(selectedSheet);
+        // console.log(selectedSheet);
 
         let arrayOfStrings = JSON.stringify(worksheets[selectedSheet]); //note: this is not an array, I wrote worksheets[selectedSheet] instead of worksheets.selectedSheet because that is the way to make javascript read the value of selectedSheet and not selectedSheet itself.
         // console.log(arrayOfStrings);
@@ -92,7 +92,7 @@ function handleFileInput(event) {
         answer.innerText = arrayOfObjects[questionNumber].Answer;
         // result.classList.toggle('hidden');
 
-                if (result.classList.value = "hidden"){
+        if (result.classList.value = "hidden"){
             
         }else {
             result.classList.toggle("hidden")
@@ -110,7 +110,15 @@ function handleFileInput(event) {
 
         // Add click event listener to the button
         next.addEventListener("click", function() {
+
+
+        if ( questionNumber === arrayOfObjects.length -1 ) {
+            questionNumber = 0
+        } else {
         questionNumber++
+        }
+        // questionNumber++
+        // console.log(questionNumber)
         question.innerText = `Question  ${questionNumber +1}: ${arrayOfObjects[questionNumber].Question}`;
         answer.innerText = arrayOfObjects[questionNumber].Answer;
 
@@ -120,17 +128,23 @@ function handleFileInput(event) {
             result.classList.toggle("hidden")
         }
         // result.classList.toggle('hidden');
-        console.log(result.classList);
+        // console.log(result.classList);
   });
-        const Previous = document.getElementById("Previous")
+
+        const Previous = document.getElementById("change previous")
 
         Previous.addEventListener("click", function() {
-        questionNumber - 1
-        console.log(questionNumber)
+
+        if ( questionNumber === 0 ) {
+            questionNumber = arrayOfObjects.length -1
+        } else {
+        questionNumber = questionNumber - 1
+        }
+
         question.innerText = `Question  ${questionNumber +1}: ${arrayOfObjects[questionNumber].Question}`;
         answer.innerText = arrayOfObjects[questionNumber].Answer;
 
-                if (result.classList.value = "hidden"){
+        if (result.classList.value = "hidden"){
             
         }else {
             result.classList.toggle("hidden")
